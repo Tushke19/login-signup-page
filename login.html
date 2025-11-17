@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="user-info">
+    <h1> <b> Log in</b></h1>
+    
+    <form action="active">
+        <label for="name" class="fname">Full Name
+       
+        <input type="text" name="fname" placeholder="Full Name" ></label><br>
+         <label for="email" class="email">email
+        <input type="email" name="email" placeholder="write email" autocorrect="on"  required></label><br>
+<label for="confirmPassword">Confirm Password</label>
+<div class="password-container">
+    <input type="password" id="confirmPassword" placeholder="confirm password" autocomplete="current-password" minlength="8" required>
+    <!-- The eye icon (initially closed) -->
+    <i class="fa-solid fa-eye-slash toggle-icon" id="toggleConfirmPassword"></i>
+</div>
+<button class="btn-signup"><b>login</b></button>
+ <span id="passwordMatchMessage" style="font-size: 0.8em; margin-top: 5px;"></span>
+        
+    </form>
+    <p>
+    dont have an account ?<a href="darkmode.html">sign up</a></p> 
+</div>
+ 
+</body>
+</html>
