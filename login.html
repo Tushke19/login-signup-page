@@ -9,27 +9,29 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div id="user-info">
+    <div class="user-info">
     <h1> <b> Log in</b></h1>
     
-    <form action="active">
-        <label for="name" class="fname">Full Name
-       
-        <input type="text" name="fname" placeholder="Full Name" ></label><br>
-         <label for="email" class="email">email
-        <input type="email" name="email" placeholder="write email" autocorrect="on"  required></label><br>
-<label for="confirmPassword">Confirm Password</label>
-<div class="password-container">
-    <input type="password" id="confirmPassword" placeholder="confirm password" autocomplete="current-password" minlength="8" required>
-    <!-- The eye icon (initially closed) -->
-    <i class="fa-solid fa-eye-slash toggle-icon" id="toggleConfirmPassword"></i>
-</div>
-<button class="btn-signup"><b>login</b></button>
- <span id="passwordMatchMessage" style="font-size: 0.8em; margin-top: 5px;"></span>
-        
+    <form action="#" method="post">
+        <label for="full-name" class="fname">Full Name</label>
+        <input id="full-name" name="full-name" type="text" placeholder="Full Name" required>
+
+        <label for="email" class="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+        <label for="password">Password</label>
+        <div class="password-container">
+            <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" minlength="8" required>
+            <!-- The eye icon (initially closed) -->
+            <button type="button" class="toggle-icon" id="togglePassword" aria-label="Show password">
+                <i class="fa-solid fa-eye-slash"></i>
+            </button>
+        </div>
+        <button class="btn-signup" type="submit"><b>Login</b></button>
+        <span id="passwordMatchMessage" style="font-size: 0.8em; margin-top: 5px;"></span>
     </form>
     <p>
-    dont have an account ?<a href="darkmode.html">sign up</a></p> 
+    Don't have an account? <a href="darkmode.html">Sign up</a></p>
 </div>
  
 </body>
